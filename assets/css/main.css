@@ -22,7 +22,7 @@ body {
 }
 header{
   position: fixed;/*Menu fijo*/
-  background:#E00B0B;
+  background:#000;
   width: 100%;
   top: 0;
 }
@@ -61,7 +61,7 @@ header{
 
 .mt-0 {
   margin-top: 0px;
-  background:#DE0505;
+  background:#6E0ACC;
 }
 
 .m-0 {
@@ -120,6 +120,7 @@ img {
   display: inline-block;
   font-size: 14px;
 }
+/*SECTION SERVICES*/
 #services{
   background: #F17C72;
   text-align: center;
@@ -135,6 +136,61 @@ img {
   font-size: 35px;
   letter-spacing: 2px;/*Espacio entre cada letra*/
 }
+
+/*SECTION WORK*/
+
+#work{
+  background: #fff;
+  text-align: center;
+  color: #000;
+  padding: 70px 7px;
+}
+.text-work{
+  font-size: 35px;
+  letter-spacing: 2px;/*Espacio entre cada letra*/
+}
+.img-center{
+  margin-top: 63px;
+
+}
+
+.modalDialog{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+.modalDialog > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+
+
+
+
+#caja{
+  
+}
+
 footer{
   text-align: center;
   height: 70px;
@@ -142,3 +198,14 @@ footer{
   color: white;
   padding-top: 7px;
 }
+
+
+
+
+
+
+
+
+
+
+
