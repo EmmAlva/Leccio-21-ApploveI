@@ -1,0 +1,144 @@
+/*CLASES REUTILIZABLES*/
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.71429;
+  background-color: #fff;
+}
+header{
+  position: fixed;/*Menu fijo*/
+  background:#E00B0B;
+  width: 100%;
+  top: 0;
+}
+.menu{
+  padding: 14px 70px;
+  overflow: auto;
+}
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  /*background-color: #2AE0F0;*/
+}
+
+.container:before, .container:after {
+    content: " ";
+    display: table;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container:after {
+    clear: both;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+  background-color: #33B639;
+/*  font-size: 15px;*/
+}
+
+.mt-0 {
+  margin-top: 0px;
+  background:#DE0505;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+a {
+  color: #373B47;
+  text-decoration: none;
+}
+a:hover {
+  color: #F1EA2F;
+  background-color: #3CA812
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+.link{
+  font-weight: 700;
+  padding: 21px;
+  display: inline-block;
+
+}
+.logo{
+  float:right; /*posisiocnar logo al lado derecho*/
+}
+img {
+  vertical-align: middle;
+}
+#home{
+  background-image: url(../img/bg-home.jpg); /*Imagen de portada*/
+  background-position: center; /*Posicionar nuestra imagen al centro*/
+  background-repeat: no-repeat;/*NO repetirá la imagen de fondo*/
+  background-size: cover;/*Cubre todo el tamaño del contenedor*/
+  height: 554px;/*Altura de nuestro home*/
+  text-align:center;/*Alineación al centro*/
+  margin-top: 80px;/*Darle un margen en la parte de arriba*/
+}
+#home .container{
+  color: white; /*color blanco en los textos*/
+  padding: 70px;/*Relleno de 70px en todos los lados(top, right, bottom, left)*/
+}
+.text-home{
+  font-size: 53px; /*Tamaño de la tipografía*/
+}
+
+.btn-home{
+  background:#2ECC71; 
+  color: #fff;
+  padding: 11px 20px; /*Relleno en el botón 11px(top-bottom) y 20px(left-right)*/
+  border-radius: 1px;/*Redondear el borde 1px*/
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 63px;/*margen en la parte de arriba: 63px*/
+  display: inline-block;
+  font-size: 14px;
+}
+#services{
+  background: #F17C72;
+  text-align: center;
+  color: #fff;
+  padding: 70px 7px; /*Relleno con referencia al botón 70px(top-bottom) y 7px (left-rigth)*/
+}
+.box-services{
+  display: inline-block;
+  width: 30%;/*Para que las cajas tengan un ancho de 30%*/
+  margin-top: 63px; /*margen de la parte de arriba:63px*/
+}
+.text-services{
+  font-size: 35px;
+  letter-spacing: 2px;/*Espacio entre cada letra*/
+}
+footer{
+  text-align: center;
+  height: 70px;
+  background: #373B47;
+  color: white;
+  padding-top: 7px;
+}
